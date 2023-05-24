@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <form action="" method="post">
+        {% if full_name %}
+        <p>Привет!, {{full_name}}! </p>
+        <p>Под псевдонимом: {{login}} мы вас ждали! </p>
+        {% endif %}
+
+        {% if rg==True %}
+        <p> Поздравляю, {{ful_name}}! Вы прошли регистрацию.</p>
+        <p> Теперь вы известны как {{log}}!</p>
+        <input type="submit" value="Завершить и перейти в окно входа" name="login">
+        {%endif%}
+	</p>
+
+    </form>
+</head>
+<body>
+
+</body>
+</html>
