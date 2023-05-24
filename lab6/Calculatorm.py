@@ -142,4 +142,4 @@ win = Calculator()
 win.show()
 
 sys.exit(app.exec_())
-
+# Удалов Андрей БВТ2204
