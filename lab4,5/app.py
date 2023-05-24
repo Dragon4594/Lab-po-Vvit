@@ -59,5 +59,5 @@ def registration():
             return redirect("/login/")
     return render_template('registration.html')
 
-
+#Андрей Удалов БВТ2204
 #http://localhost:5000/login/
