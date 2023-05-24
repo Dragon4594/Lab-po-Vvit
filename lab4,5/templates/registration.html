@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="" method="post">
+      <p>
+    <label for="name">Введите имя:</label>
+    <input type="text" name="name"value={{insert_name}}>
+     </p>
+        <p>
+	    <label for="login">Введите псевдоним:</label>
+	    <input type="text" name="login" value={{insert_login}}>
+	     </p>
+	<p>
+	    <label for="password">Введите пароль:</label>
+	    <input type="password" name="password" value={{insert_password}}>
+	</p>
+	<p>
+	    <input type="submit" value="Зарегистрироваться" name="registration">
+	</p>
+		<p>
+	    <input type="submit">
+		{% if kor_pass == True %}
+        <p>пароль должен содержать больше 6 симфолов</p>
+        {% endif %}
+
+		{% if registr == True %}
+        <p>Такой псевдоним уже занят. Папробуйте его изменить</p>
+        {% endif %}
+		{% if pusto == True %}
+        <p>Убедитесь что все поля заполнены</p>
+        {% endif %}
+		</p>
+    </form>
+
+</body>
+</html>
+
